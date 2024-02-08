@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+htm{
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+h4{
+    text-align: center;
+    margin: 50px 0 0 0;
+    color: #fff;
+    background-color: #1313ca;
+    font-size: 30px;
+}
+
+.sobre{
+    padding: 5%;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.sobre h2{
+    text-align: center;
+    color: #1313ca;
+    font-size: 25px;
+    margin: 20px 0;
+    line-height: 10px;
+    font-weight: 500;
+}
+
+.sobre p{
+    text-align: justify;
+    margin: 40px 0;
+    
+}
+
+.body-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.equipe{
+    display: flex;
+    width: 100%;
+    padding: 50px 20px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #1313ca;
+}
+
+.equipe .perssoal{
+    max-width: 300px;
+    height: 270px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    flex-direction: column;
+    transition: all 0.5s ease-in-out;
+    margin: 50px 10px;
+    cursor: pointer;
+}
+
+
+.equipe .perssoal:hover{
+    height: 450px;
+}
+
+.equipe .perssoal .image{
+    position: relative;
+    width: 270px;
+    height: 270px;
+    top: -60px;
+    left: 15px;
+    z-index: 1;
+}
+
+.equipe .perssoal .image h2{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 20px 0;
+    text-transform: capitalize;
+    color: #1313ca;
+}
+
+.equipe .perssoal .image img{
+    width: 100%;
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+}
+
+.equipe .perssoal:hover .image img{
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.equipe .perssoal .texto{
+    position: relative;
+    margin-top: -20px;
+    text-align: center;
+    padding: 10px;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.equipe .perssoal:hover .texto{
+    visibility: visible;
+    transition-delay: .3s;
+}
+
+
+.equipe .perssoal .texto p{
+    text-align: justify;
+}
+
+
+@media screen and (max-width: 760px){
+    
+    
+    .equipe .perssoal{
+        max-width: 600px;
+        height: 470px;
+
+        }
+    
+    .equipe .perssoal .image {
+        position: relative;
+        width: 450px;
+        height: 270px;
+        top: -60px;
+        left: 44px;
+        z-index: 1;
+}
+      
+
+}
+
+
+
+@media screen and (max-width: 500px){
+
+    .equipe .perssoal{
+        max-width: 600px;
+        height: 250px;
+
+        }
+    
+    
+    .equipe .perssoal:hover{
+        height: 450px;
+    }
+    
+    
+
+    .equipe .perssoal .image {
+        position: relative;
+        width: 220px;
+        height: 270px;
+        top: -60px;
+        left: 20px;
+        z-index: 1;
+}
+      
+
+}
+
+
+
+
+.areaContato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+.areaContato .contato .social-medias{
+    display: flex;
+}
+
+.areaContato .contato h2{
+    margin-bottom: 30px;
+    color: #1313ca;
+    font-size: 30px;
+}
+
+.areaContato .contato h3{
+    margin-bottom: 30px;
+    color: #1313ca;
+}
+
+.areaContato .contato p{
+    margin-bottom: 10px;
+}
+
+.contat{
+    color: black;
+    margin: 10px;
+}
+
+.areaContato form{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 auto;
+    border: 1px solid #1313ca;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.areaContato form input{
+    margin: 10px 0;
+    height: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #1313ca;
+}
+
+
+.areaContato form textarea{
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    resize: none;
+    border: 1px solid #1313ca;
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.areaContato form .btn{
+    margin: 10px 0;
+    height: 35px;
+    padding: 5px;
+    background-color: #1313ca;
+    border: none;
+    color: #fff;
+    transition: all 1s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.areaContato form .btn:hover{
+    background-color: #fff;
+    border: 1px solid #1313ca;
+    color: #1313ca;
+
+}
+
+
+
+@media screen and (max-width: 760px){
+    
+.areaContato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 20px;
+    flex-direction: column;
+}
+
+
+.areaContato form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #1313ca;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+      
+
+}
